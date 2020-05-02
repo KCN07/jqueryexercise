@@ -23,6 +23,14 @@ $(document).ready(function(){
   $("#btn2").click(function(){
     $("ol").prepend("<li>Prepended item</li>");
   });
+  
+  $("#btn3").click(function(){
+    $("img").before("<b>Before</b>");
+  });
+
+  $("#btn4").click(function(){
+    $("img").after("<i>After</i>");
+  });
 });
 
 </script>
@@ -44,6 +52,13 @@ $(document).ready(function(){
 
 <button id="btn1">Prepend text</button>
 <button id="btn2">Prepend list item</button>
+
+</br>
+
+<img src="imagesjq/img_flower.jpg" alt="jQuery" width="100" height="140"><br><br>
+
+<button id="btn3">Insert before</button>
+<button id="btn4">Insert after</button>
 
 </body>
 </html>
